@@ -1,0 +1,63 @@
+.circle-wrapper {
+  position: relative;
+  border: 1px solid black;
+  height: 300px;
+  padding: 5px;
+  background: #e2e3e7;
+}
+
+.circle {
+  transition-property: width, height;
+  transition-duration: 2s;
+  position: absolute;
+  transform: translateX(-50%) translatey(-50%);
+  background-color: red;
+  border-radius: 50%;
+
+  width: 0;
+  height: 0;
+  /* width: 200px; */
+  /* height: 200px; */
+  /* top: 150px; */
+  /* left: 150px; */
+}
+
+.circle-button {
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 2px 10px;
+  background-color: #dedede;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.circle-button:hover {
+  background-color: #cecece;
+}
+
+.circle-button:active {
+  border-color: #aaa;
+}
+
+.circle-param {
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding: 0 0 0 5px;
+  border-radius: 5px;
+}
+
+.circle-param input {
+  width: 50px;
+  outline: none;
+  border: 1px solid #eee;
+}
+
+.message-ball {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
