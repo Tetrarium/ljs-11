@@ -25,7 +25,7 @@ console.log('Promises file');
  *      "pending" -> "fulfilled" | "rejected"
  */
 
-let promise2 = new Promise((res) => {
+let promise2 = new Promise<string>((res) => {
   setTimeout(() => res('done'), 1000);
 });
 console.log(promise2);
@@ -49,12 +49,12 @@ console.log(promise3);
  */
 
 promise2.then(
-  result => console.log('Успешное выполнение промиса 2. Результат:', result)
+  (result: any) => console.log('Успешное выполнение промиса 2. Результат:', result)
 );
 
 promise3.then(
   null,
-  err => console.log('Ошибка выполнения промиса 3. Результат:', err.message)
+  (err: { message: any; }) => console.log('Ошибка выполнения промиса 3. Результат:', err.message)
 );
 
 /**

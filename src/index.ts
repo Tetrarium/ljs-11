@@ -1,5 +1,6 @@
 // import './callbacks/callbacks';
-import './promises';
+// import './promises';
+import './chainingPromise';
 
 const root = document.getElementById('root')!;
 
