@@ -1,7 +1,8 @@
 // import './callbacks/callbacks';
 // import './promises';
 // import './chainingPromise';
-import './catch';
+// import './catch';
+import './promiseApi';
 
 const root = document.getElementById('root')!;
 
