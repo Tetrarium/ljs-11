@@ -2,7 +2,8 @@
 // import './promises';
 // import './chainingPromise';
 // import './catch';
-import './promiseApi';
+// import './promiseApi';
+import './asyncAwait';
 
 const root = document.getElementById('root')!;
 
